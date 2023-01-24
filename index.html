@@ -1,0 +1,247 @@
+<div id="app"></div>
+<script>
+  // https://www.youtube.com/watch?v=SFgppU2J8To&t=1960s
+
+  //1
+  // let a=[];
+  // let b=[];
+  // console.warn(a==b); // false
+  // console.warn(a===b); // false
+</script>
+
+<script>
+  //2
+  // let a=[];
+  // let b=a;
+  // console.warn(a==b); // true
+  // console.warn(a===b); // true
+</script>
+
+<script>
+  //3
+  // let a=[20];
+  // let b=[20];
+  // console.warn(a[0]==b[0]); // true
+  // console.warn(a[0]===b[0]); // true
+
+  // let a=[20];
+  // let b=['20'];
+  // console.warn(a[0]==b[0]); // true
+  // console.warn(a[0]===b[0]); // false
+</script>
+
+<script>
+  //4
+  // let z=[1,2,3,4];
+  // let a= {name: "Rajesh"};
+  // console.warn(...z);
+</script>
+
+<script>
+  //5
+  // console.warn((typeof NaN)); //Not a number but return type will number
+</script>
+
+<script>
+  //6
+  // let data = 10 - -10;
+  // console.warn((data)); // 20
+</script>
+
+<script>
+  //7
+  // const set = new Set([1, 1, 2, 3, 4]);
+  // console.warn(set); // {1, 2, 3, 4}
+</script>
+
+<script>
+  //8
+  // const data = {name: "Rajesh"};
+  // console.warn(delete data.name); // true
+  // console.warn(data); // {}
+</script>
+
+<script>
+  //9
+  // const data = {name: "Rajesh"};
+  // console.warn(delete data); // false
+  // console.warn(data); // {name: 'Rajesh'}
+</script>
+
+<script>
+  //10
+  // const data = ["Peter", "anil", "sam"];
+  // const [y] = data;
+  // console.log(y); // Peter
+  // const [a, b] = data;
+  // console.log(a,b); // Peter anil
+  // console.log(data[2]); // sam
+</script>
+
+<script>
+  //11
+  // const data = {name: "anil", age: 30, skill: "js"}
+  // // how to get name property withou .operator
+  // const {name} = data; // anil
+  // console.warn(name);
+
+  // const arr = [
+  // { 'topOrder': [0, 1, 4, 5, 6, 7, 11, 17, 18] },
+  // { 'bottomOrder': [2, 3, 8, 9, 10, 12, 13, 14, 15, 16] }
+  // ];
+  // const {topOrder} = arr[0];
+  // const {bottomOrder} = arr[1];
+  // let total = [];
+  // console.warn(topOrder);
+  // console.warn(bottomOrder);
+  // let zyz = topOrder.concat(bottomOrder);
+  // let output = [];
+  // zyz.forEach(element => {
+  //    if(element >10){
+  // output.push(element);
+  //    }
+  // });
+  // console.log("array",zyz);
+  // console.log("array",output.sort());
+</script>
+
+<script>
+  //12
+  //   let data = { name: "anil", age: 30, skill: "JS" };
+  //   let info = { city: "Mumbai", email: "rajesh@gmail.com" };
+  //   data = { ...data, ...info };
+  //   console.warn(data); // {name: 'anil', age: 30, skill: 'JS', city: 'Mumbai', email: 'rajesh@gmail.com'}
+
+  //   const arr = [
+  //     { topOrder: [0, 1, 4, 5, 6, 7, 11, 17, 18] },
+  //     { bottomOrder: [2, 3, 8, 9, 10, 12, 13, 14, 15, 16] },
+  //   ];
+  //   let first = arr[0].topOrder;
+  //   let second = arr[1].bottomOrder;
+  //   let all = [...first, ...second];
+  //   var out = all.filter((element) => {
+  //     return element > 10;
+  //   });
+  //   console.log(out); //[11, 17, 18, 12, 13, 14, 15, 16]
+</script>
+
+<script>
+  //13
+  // let data = { name: "anil", age: 30, skill: "JS" };
+  // let info = { city: "Mumbai", email: "rajesh@gmail.com" };
+  // data = { data, ...info };
+  // console.warn(data); // {name: 'anil', age: 30, skill: 'JS', city: 'Mumbai', email: 'rajesh@gmail.com'}
+</script>
+
+<script>
+  //14
+  //     let data = { name: "anil", age: 30, skill: "JS" };
+  //     let info = { city: "Mumbai", skill: "node" };
+  //     data = { ...data, ...info };
+  //     console.warn(data); // {name: 'anil', age: 30, skill: 'node', city: 'Mumbai'}
+  //
+</script>
+<script>
+  //15
+  // const name= "Rajesh";
+  // console.warn(name()); // error: name is not a function
+</script>
+
+<script>
+  //16
+  // const result= false || {} || null;
+  // console.warn(result); // {}
+</script>
+
+<script>
+  //17
+  // const result= null || false || '';
+  // console.warn(result); // emplty string ''
+
+  // const result1= null || '' || false;
+  // console.warn(result1)
+</script>
+
+<script>
+  //18
+  // const result= [] || false || '';
+  // console.warn(result);
+</script>
+
+<script>
+  //19
+  //console.warn(Promise.resolve(5)); // Promise {<fulfilled>: 5}
+</script>
+
+<script>
+  //20
+  // console.log(":)" === ":)")
+</script>
+
+<script>
+  //21
+  //JSON.parse();
+  // what this method will do.
+  // A: Parses JSON to JavaScript value
+  // B: Prases a JavaScript object to JSON
+  // c: Parses any JavaScript value to JSON
+  // D: Parses JSON to JavaScript object only
+  // Answer - A
+</script>
+
+<script>
+  //22
+  // let name = 'Rajesh';
+  // function getName(){
+  //     console.log(name);
+  //     let name = "rajesh";
+  // }
+  // getName();
+</script>
+
+<script>
+  //23
+  // let name = 'Rajesh';
+  // function getName(){
+  //     console.log(name);
+  // }
+  // getName(); // Rajesh
+</script>
+
+<script>
+  // 24
+  // console.log(`${(x=>x)('I love')} to program`); // I love to program
+  // console.log((x=>x)('I love')); // I love
+</script>
+
+<script>
+  // 25
+  function sumValue(x, y, z) {
+    return x + y + z;
+  }
+  // A: sumValue([..1,2,3]);
+  // B: sumValue([...[1,2,3]]);
+  // C: sumValue(...[1,2,3]); // Correct
+  // D: sumValue([1,2,3]);
+  console.log(sumValue(...[1, 2, 3]));
+</script>
+
+<!-- Miscllenous - Start-->
+<script>
+  //     var animals = [
+  //   { kind: 'Horse', name: 'Henry', age: 43 },
+  //   { kind: 'Dog', name: 'Spot', age: 13 },
+  //   { kind: 'Cat', name: ' Mittens', age: 18 },
+  // ];
+  //     console.table(animals);
+  //     console.dir(document.head);
+</script>
+
+<script>
+  //   window.addEventListener('click', function(event) {
+  //   console.count(event.type);
+  //   console.log(event);
+  // });
+</script>
+
+<!-- Miscllenous - End-->
