@@ -216,16 +216,379 @@
 
 <script>
   // 25
-  function sumValue(x, y, z) {
-    return x + y + z;
-  }
+  // function sumValue(x, y, z){
+  //     return x+y+z;
+  // }
   // A: sumValue([..1,2,3]);
   // B: sumValue([...[1,2,3]]);
   // C: sumValue(...[1,2,3]); // Correct
   // D: sumValue([1,2,3]);
-  console.log(sumValue(...[1, 2, 3]));
+  // console.log(sumValue(...[1,2,3]));
 </script>
 
+<script>
+  // 26
+  // const name = "code";
+  // console.log(!typeof name === 'object');
+  // console.log(!typeof name === 'string');
+  // console.log(!typeof name === false);
+</script>
+
+<script>
+  //27
+  // const name = "Rajesh";
+  // const age = 30;
+  // console.log(isNaN(name));
+  // console.log(isNaN(age));
+</script>
+<script>
+  //28
+  // let person = {name: "Rajesh"};
+  // // What can modify person object
+  // Object.seal(person);
+  // person.name = "Chauhan";
+  // console.warn(person);
+</script>
+<script>
+  //29
+  // let data =[2, 9,0,10];
+  // // remove first element from aary
+  // //data.shift(data);
+  // // remove last element form array
+  // data.pop(data);
+  // console.warn(data);
+</script>
+
+<script>
+  //30
+  // let data =[2, 9,0,10];
+  // // remove last element form array
+  // data.pop(data);
+</script>
+<script>
+  //31
+  // let a =30;
+  // // Check even or odd number
+  // if (a % 2 === 0) {
+  //   console.log("This is even number");
+  // } else {
+  //   console.log("This is odd number")
+  // }
+  // console.warn(a%3);
+</script>
+<script>
+  // // 32
+  // // Delete data object
+  // let data ={name: "Rajesh"};
+  // delete data.name;
+  // console.warn(data);
+</script>
+<script>
+  //33
+  // let data = "true";
+  // // convert data to boolean false value
+  // console.warn(typeof !data);
+</script>
+<script>
+  //34
+  // let data = "true";
+  // // convert data to boolean true value
+  // console.warn(!!data)
+</script>
+<script>
+  //35
+  // let data = ['Rajesh', 'peter', 'bruce'];
+  // delete data[1];
+  // console.warn(data);
+</script>
+<script>
+  // 36
+  // delete element from array
+  // let data = ['Rajesh', 'peter', 'bruce'];
+  // delete data[1];
+  // console.warn(data.length);
+</script>
+<script>
+  //37
+  // merge two array
+  // let arr1 = ['Rajesh', 'Santosh', 'Manoj'];
+  // let arr2 = ['Ravi','Kavi']
+  // // using concat
+  // let arr3 = arr1.concat(arr2);
+  // console.log("concat opeator",arr3);
+  // // using spread (...) operator
+  // let arr4 = [...arr1, ...arr2];
+  // console.warn("... operatore",arr4);
+</script>
+<script>
+  // 38
+  // merge two number with one same element
+  // let a = [1, 2, 3, 4];
+  // let b = [4, 5, 6];
+  // let c = [...a, ...b];
+  // console.warn(c); // [1, 2, 3, 4, 4, 5, 6]
+</script>
+<script>
+  // 39
+  // how to calculate squre of number
+  // let a = 3**3;
+  // console.warn(a); // 27
+</script>
+<script>
+  // 40
+  // let a = 2;
+  // setInterval(() => {
+  //   console.warn(a); // 100
+  // }, 0);
+  // a = 100;
+</script>
+<script>
+  //40
+  // Javascript is case-sentive
+  // let a =2;
+  // let A= 30;
+  // console.warn(A);
+</script>
+<script>
+  // 41
+  // let A10 = "like";
+  // //let 10A = 'Ok';
+  // console.log(A10);
+</script>
+<script>
+  //42
+  // let a = 'like';
+  // let b = `like`;
+  // console.warn(a===b); // true
+</script>
+<script>
+  // 43
+  // let a=1;
+  // let b= 2;
+  // console.warn(--b===a); // true
+</script>
+<script>
+  // 44
+  // let a =1;
+  // let b = 1;
+  // let c=2;
+  // console.warn(a===b=== --c); // false
+</script>
+<script>
+  // 45
+  // console.warn(3*3); // 9
+  // console.warn(3**3); // 27
+  // //console.warn(3***3); // error
+</script>
+<script>
+  // 46
+  // console.warn(a); // undefined
+  // var a=1;
+</script>
+<script>
+  // 47
+  //console.warn(a); // a is not defined
+</script>
+<script>
+  //48
+  // console.log([[[[]]]]) // return nestest array
+</script>
+<script>
+  // 49
+  // how to find OS name
+  // console.warn(navigator.platform); // win32
+</script>
+<script>
+  //50
+  // let for =100; // error (for is reseved key)
+</script>
+<script>
+  //51
+  // function fruit(){
+  //   console.log(name); // undefined
+  //   console.log(price); // can not access price befor initialization
+  //   var name= "apple";
+  //   let price = 20;
+  // }
+  // fruit();
+</script>
+<script>
+  // 52
+  // for (var i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i); // 3, 3, 3
+  //   }, 1000);
+  // }
+  // console.log(i); // 3
+
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i); // 0 , 1, 2
+  //   }, 1);
+  // }
+</script>
+<script>
+  //53
+  // console.warn(+true); // 1
+  // console.warn(typeof +true); // number
+</script>
+<script>
+  //55
+  // console.warn(!"Rajesh"); // false
+  // console.warn(typeof("Rajesh")) // string
+</script>
+<script>
+  //56
+  // let data = "size";
+  // const bird = {
+  //   size: "small"
+  //   }
+  //   console.warn(bird[data]); // small
+  //   console.warn(bird["size"]); // small
+  //   console.warn(bird.size); // small
+  //   console.warn(bird.data); // undefined
+</script>
+<script>
+  // 57
+  // let c= {name: "peter"};
+  // let d;
+  // d=c;
+  // c.name = "Rajesh";
+  // console.log(d.name); // Rajesh
+</script>
+<script>
+  // 58
+  // var x;
+  // var x=10;
+  // console.log(x); // 10
+</script>
+<script>
+  // 59
+  // var x;
+  // let x=10;
+  // console.log(x); // x has alredy been declared.
+</script>
+<script>
+  // 60
+  // let a = 3;
+  // let b = new Number(3);
+  // console.log(a);
+  // console.log(b);
+  // console.log(a==b); // true
+  // console.log(a===b); // false
+</script>
+<script>
+  // 61
+  // let name;
+  // name= {}; //Typo
+  // console.log(name); // {}
+</script>
+<script>
+  // 62
+  // function fruit(){
+  //   console.log("Apple!"); // Apple!
+  // }
+  // fruit.name = "Mango";
+  // fruit();
+</script>
+<script>
+  //63
+  // function sum(a,b){
+  //   return a + b;
+  // }
+  // console.warn(sum(1, "2")); //12
+</script>
+<script>
+  // 64
+  // let number = 0;
+  // console.log(number++); // 0
+  // console.log(++number); // 2
+  // console.log(number); // 2
+</script>
+<script>
+  // 65
+  // function getAge(...args){
+  //   console.log(typeof args); // object
+  // }
+  // getAge(21);
+</script>
+<script>
+  // 66
+  // function getAge(){
+  //   'use strict';
+  //   age = 21;
+  //   console.log(age);// error age in not defined
+  // }
+  // getAge();
+</script>
+<script>
+  // 67
+  // eval() function covert value to expression
+  // const sum = eval("10*10+5");
+  // console.log(sum); // 105
+</script>
+<script>
+  // 68
+  // how to long is cool_secret accessible?
+  // sessionStorage.setItem("token", 123);
+  // console.log(sessionStorage.getItem("token"));
+</script>
+<script>
+  //69
+  // const obj = {1: "a", 2: "b", 3: "c"};
+  // console.log(obj.hasOwnProperty("1")); // true
+  // console.log(obj.hasOwnProperty(1)); // true
+  // console.log(obj.hasOwnProperty(2)); // true
+</script>
+<script>
+  // 70
+  // const obj = {a: "one", b: "two", a: "repeat"};
+  // console.log(obj); // {a: 'repeat', b: 'two'}
+</script>
+
+<script>
+  // 71
+  // for (let i = 1; i < 5; i++) {
+  //   if (i === 3) continue; {
+  //     console.log(i);  // 1 2 4
+  //   }
+  // }
+</script>
+<script>
+  // const foo =() => console.log('First');
+  // const bar = () => setTimeout(() => console.log("second"));
+  // const test = () => console.log("Third");
+  // bar();
+  // foo();
+  // test();
+  // // output - First Third second
+</script>
+<script>
+  // 73
+  // <div onclick="console.log('first div')">
+  //   <div onclick="console.log('second div');">
+  //     <button onclick="console.log('button')">
+  //     Click</button>
+  // </div>
+  // </div>
+  // // output button, second div, first div
+</script>
+<script>
+  // 74
+  // const person = {name: "anil"};
+  // function syHi(age){
+  //   return `${this.name} is ${age}`;
+  // }
+  // console.log(syHi.call(person, 21)); // anil is 21
+  // console.log(syHi.bind(person, 21)); // return function
+</script>
+<script>
+  //75
+  // function sayHi(){
+  //   return (()=>0)();
+  // }
+  // console.log(typeof sayHi()); // number
+</script>
 <!-- Miscllenous - Start-->
 <script>
   //     var animals = [
@@ -238,10 +601,42 @@
 </script>
 
 <script>
-  window.addEventListener('click', function (event) {
-    console.count(event.type);
-    console.log(event);
-  });
+  //   window.addEventListener('click', function(event) {
+  //   console.count(event.type);
+  //   console.log(event);
+  // });
+</script>
+
+<script>
+  // // filter only number from array
+  // // Return value
+  // // When Number is called as a constructor (with new), it creates a Number object, which is not a primitive.
+  // // When Number is called as a function, it coerces the parameter to a number primitive. BigInts are converted to numbers. If the value can't be converted, it returns NaN.
+
+  // const data= [1, 'test', 2, 3, 'rajesh'];
+  // let arr = data.filter(Number);
+  // console.warn(arr); // [1, 2, 3]
+</script>
+
+<script>
+  // // Number() constructor
+  // // Parameters
+  // // value
+  // // The numeric value of the object being created.
+  // // Return value
+  // // When Number is called as a constructor (with new), it creates a Number object, which is not a primitive.
+  // // When Number is called as a function, it coerces the parameter to a number primitive. BigInts are converted to numbers. If the value can't be converted, it returns NaN.
+
+  // const a = new Number('123'); // a === 123 is false
+  // const b = Number('123');     // b === 123 is true
+  // a instanceof Number;         // is true
+  // b instanceof Number;         // is false
+  // typeof a // "object"
+  // typeof b // "number"
+  // console.warn(a=== 123);
+  // console.warn(b=== 123);
+  // console.warn(a);
+  // console.warn(b);
 </script>
 
 <!-- Miscllenous - End-->
